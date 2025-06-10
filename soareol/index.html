@@ -32,188 +32,17 @@
     <title>Glide Client - SoarClient 7 End Of Life</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
-    <style>
-        /* Additional styles specific to this page */        .option-cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;            margin-top: 2rem;
-            margin-bottom: 8rem;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .option-card {
-            background-color: var(--card-bg);
-            padding: 2rem;
-            border-radius: 15px;
-            width: 100%;
-            max-width: 500px;
-            text-align: left;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .option-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .option-card.recommended {
-            border: 2px solid var(--primary-color);
-        }
-        
-        .option-card.not-recommended {
-            border: 2px solid #ff5252;
-        }
-        
-        .status-tag {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-        
-        .status-tag.active {
-            background-color: var(--primary-color);
-            color: white;
-        }
-          .status-tag.inactive {
-            background-color: #ff5252;
-            color: white;
-        }
-        
-        .legacy-button {
-            background-color: #ff5252;
-            border: none;
-            color: white;
-        }
-        
-        .legacy-button:hover {
-            background-color: #e03c3c;
-        }
-        .hero {
-            min-height: calc(100vh + 150px);
-            padding: 12rem 2rem 8rem 2rem;
-            text-align: center;
-            background-image: url('/assets/bg.webp');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .hero h1, .hero h2 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            max-width: 800px;
-            margin: 0 auto;
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-        
-        .option-card h3 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .option-card p {
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }        @media (max-width: 800px) {
-            .option-cards {
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 6rem;
-            }
-            
-            .option-card {
-                width: 100%;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero {
-                padding-top: 8rem;
-                min-height: calc(100vh + 200px);
-            }
-        }
-
-        @media (max-height: 700px) {
-            .hero {
-                min-height: calc(100vh + 300px);
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <div class="loader-wrapper">
-        <div class="loader">
-            <img src="/assets/logo.svg" alt="Glide Client Logo">
-        </div>
-    </div>
-
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="/">
-                    <img src="/assets/logo.svg" alt="Glide Client Logo">
-                </a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="/#features">Features</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/download">Download</a></li>
-                <li><a href="/discord">Discord</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <main class="main">
         <section class="hero">
-            <h1>SoarClient 7 End Of Life</h1>
-            <p>SoarClient is changing its focus towards the next generation of SoarClient, which means SoarClient 7 has been discontinued.</p>
-            <p>Many users have been asking questions like "How do I download?", "Why is the SoarClient site down?", and "Is SoarClient dead?" The answer is simple: you need to use an alternative version like SoarClient Legacy or GlideClient while EldoDebug works on version 8 of SoarClient.</p>
-            <p>Everyone in the SoarClient and GlideClient Discord servers will be notified when SoarClient 8 becomes available. We also encourage you to subscribe to @eldodebug on YouTube for updates!</p>
-            
-            <h2>Your Options</h2>
-            <p>For now, you have two options to continue using SoarClient features:</p>
-              <div class="option-cards">
-                <div class="option-card recommended">
-                    <span class="status-tag active">Actively Maintained</span>
-                    <h3>GlideClient</h3>
-                    <p>GlideClient is a fork of Soar developed by several of the SoarClient staff members. It's actively maintained with ongoing support and regular updates. GlideClient includes all the features you love about Soar and continues to add new improvements.</p>
-                    <div class="button-group">
-                        <a href="https://glideclient.github.io/" class="cta-button">Get GlideClient</a>
-                    </div>
-                </div>
-                  <div class="option-card not-recommended">
-                    <span class="status-tag inactive">No Longer Updated</span>
-                    <h3>SoarClient Legacy</h3>
-                    <p>SoarClient Legacy/Offline is SoarClient as it was when v7 was abandoned. It's out of date and no longer maintained. While you can still use it, any bugs found will not be fixed, and no new features will be added. We recommend using GlideClient for a better experience.</p>
-                    <div class="button-group">
-                        <a href="https://github.com/Soar-Client/Legacy-SoarClient/releases" class="cta-button legacy-button">Get SoarClient Legacy</a>
-                    </div>
-                </div>
+            <h1>Glide Client</h1>
+            <h2>glideclient.github.io is no longer in use...</h2>
+            <p>Redirecting to glideclient.com</p>
+            <div class="button-group">
+                <a href="https://glideclient.com/soareol" class="cta-button">Manual Redirect</a>
             </div>
         </section>
     </main>
@@ -227,29 +56,6 @@
         </div>
     </footer>
 
-    <script>
-        // Loader handling
-        window.addEventListener('load', () => {
-            const loaderWrapper = document.querySelector('.loader-wrapper');
-            loaderWrapper.classList.add('fade-out');
-        });
-
-        // Hamburger menu handling
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-        
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
 </body>
 
 </html>
